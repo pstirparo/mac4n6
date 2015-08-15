@@ -17,12 +17,15 @@ This way the effort is centralized and made only once.
 
 
 ### Mac OS X Forensics Artifacts
+Here is the shared spreadsheet for the OSX artifacts:
 https://docs.google.com/spreadsheet/ccc?key=0An7-sa0Wh9_TdGpNQ1gydVo2a3dPbTQtb1AtVzR1bFE&usp=sharing#gid=4 
 
+Here is the link to the ForensicsWiki page updated from the above spreadsheet
 http://forensicswiki.org/wiki/Mac_OS_X_10.9_-_Artifacts_Location
 
 
 ### iOS Forensics Artifacts
+Here is the shared spreadsheet for the iOS artifacts (way too much initial phase still):
 https://docs.google.com/spreadsheet/ccc?key=0An7-sa0Wh9_TdFVTTWJ3MzZMb2pGWF93RzRLWGd1YlE&usp=sharing
 
 ## Mac4n6 Papers and Presentations
