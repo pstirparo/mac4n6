@@ -59,7 +59,6 @@ Remembered Wireless Networks,OSXWirelessNetworks,"System, Network",/Library/Pref
 ,,,,,
 ,,,,,
 USER ARTIFACTS,,,,,
-Artifact,Name,Labels,Path,Notes,Urls
 ,,,,,
 Autorun Locations,,,,,
 Login Items,OSXUserLoginItems,Users,%%users.homedir%%/Library/Preferences/com.apple.loginitems.plist,Plists listing applications that automatically start when the user is logged in,
@@ -115,7 +114,6 @@ User Trash Folder,OSXUserTrash,Users,%%users.homedir%%/.Trash/*,User Trash direc
 ,,,,,
 ,,,,,
 APPLICATIONS ARTIFACTS,,,,,
-Artifact,Name,Labels,Path,Notes,Urls
 ,,,,,
 iCloud,,,,,
 iCloud Accounts,OSXiCloudAccounts,"Users, Software, Cloud, Account",%%users.homedir%%/Library/Application Support/iCloud/Accounts/*,,
