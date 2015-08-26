@@ -1,15 +1,14 @@
 #!/usr/bin/python
 
 #########################################################################
-#																		#
-#	This script is meant to convert the csv file containg the OSX/iOS	#
-#	artifacts into a yaml artifact page									#
-#																		#
-#	Author: Pasquale Stirparo (@pstirparo)								#
-#																		#
-#	This work is licensed under the GNU General Public licensed			#
-#																		#
-#																		#
+#                                                                       #
+#	This script is meant to convert the csv file containg the OSX/iOS   #
+#	artifacts into a yaml artifact page                                 #
+#                                                                       #
+#	Author: Pasquale Stirparo (@pstirparo)                              #
+#                                                                       #
+#	This work is licensed under the GNU General Public licensed         #
+#                                                                       #
 #########################################################################
 
 import sys
@@ -20,6 +19,8 @@ from datetime import date
 __author__ = '@pstirparo'
 __version__ = '0.1'
 __location__ = 'https://github.com/pstirparo/mac4n6'
+__ref1__ = 'http://forensicswiki.org/wiki/Mac_OS_X'
+__ref2__ = 'http://forensicswiki.org/wiki/Mac_OS_X_10.9_-_Artifacts_Location'
 
 
 flag_openrow = False
@@ -63,7 +64,9 @@ def main():
 		
 		fh = open(yaml_file, 'w')
 		print >> fh, "# Mac OS X (Darwin) specific artifacts."
-		print >> fh, "# URL: " + __location__
+		print >> fh, "# mac4n6: " + __location__
+		print >> fh, "# Reference: " + __ref1__
+		print >> fh, "# Reference: " + __ref2__
 		print >> fh, "# Last update: " + date.today().isoformat() + "\n"
 
 		with open(csv_file, 'rU') as file: 
