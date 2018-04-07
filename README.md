@@ -22,6 +22,7 @@ Here is the shared spreadsheet for the OSX artifacts:
 
 Here is the link to the ForensicsWiki page updated from the above spreadsheet
 * http://forensicswiki.org/wiki/Mac_OS_X_10.9_-_Artifacts_Location
+* https://forensicswiki.org/wiki/Mac_OS_X_10.11_(ElCapitan)_-_Artifacts_Location
 
 
 ### iOS Forensics Artifacts
