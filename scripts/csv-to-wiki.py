@@ -18,7 +18,7 @@ import argparse
 
 #__description__ = ''
 __author__ = '@pstirparo'
-__version__ = '0.3'
+__version__ = '0.3.1'
 __location__ = 'https://github.com/pstirparo/mac4n6'
 
 
@@ -48,7 +48,11 @@ def main():
             for i in range(3):
                 next(reader)
             for row in reader:
-                if row[0] == "SYSTEM ARTIFACTS" or row[0] == "USER ARTIFACTS" or row[0] == "APPLICATIONS ARTIFACTS":
+                #Check if current row is the intermediate section header and skip
+                if row[0] == "Artifact" and row[1] == "Name":
+                    continue
+
+                elif row[0] == "SYSTEM ARTIFACTS" or row[0] == "USER ARTIFACTS" or row[0] == "APPLICATIONS ARTIFACTS":
                     wikiF.write("\n== " + row[0] + " ==\n")
                 
                 elif len(row[0]) > 0 and row[1] == "":
