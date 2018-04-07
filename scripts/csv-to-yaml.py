@@ -18,7 +18,7 @@ import argparse
 from datetime import date
 
 __author__ = '@pstirparo'
-__version__ = '0.1'
+__version__ = '0.2'
 __location__ = 'https://github.com/pstirparo/mac4n6'
 __ref1__ = 'http://forensicswiki.org/wiki/Mac_OS_X'
 __ref2__ = 'http://forensicswiki.org/wiki/Mac_OS_X_10.9_-_Artifacts_Location'
