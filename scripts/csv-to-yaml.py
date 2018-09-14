@@ -71,7 +71,7 @@ def main():
         
     with open(yaml_file, 'w+') as yamlF:
         yamlF.write("# Mac OS X (Darwin) specific artifacts.\n")
-        yamlF.write("# mac4n6: " + __location__)
+        yamlF.write("# mac4n6: " + __location__ + "\n")
         yamlF.write("# Reference: " + __ref1__ + "\n")
         yamlF.write("# Reference: " + __ref2__ + "\n")
         yamlF.write("# Last update: " + date.today().isoformat() + "\n\n")
