@@ -18,7 +18,7 @@ This way the effort is centralized and made only once.
 
 ### Mac OS X Forensics Artifacts
 Here is the shared spreadsheet for the OSX artifacts:
-* https://docs.google.com/spreadsheet/ccc?key=0An7-sa0Wh9_TdGpNQ1gydVo2a3dPbTQtb1AtVzR1bFE&usp=sharing#gid=4 
+* https://docs.google.com/spreadsheets/d/1X2Hu0NE2ptdRj023OVWIGp5dqZOw-CfxHLOW_GNGpX8/edit#gid=1317205466 
 
 Here is the link to the ForensicsWiki page updated from the above spreadsheet
 * http://forensicswiki.org/wiki/Mac_OS_X_10.9_-_Artifacts_Location
