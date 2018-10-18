@@ -32,14 +32,16 @@ def write_artifact(artifact, yamlF):
     yamlF.write("doc: " + artifact["doc"] + "\n")
     yamlF.write("sources:\n")
     yamlF.write("- type: FILE\n")
-    yamlF.write("  attributes:\n")
+    #yamlF.write("  attributes:\n")
     tmp = artifact["paths"].split(',')
     if int(len(tmp)) > 1:
+        yamlF.write("  attributes:\n")
         yamlF.write("    paths: \n")
         for path in tmp:
             yamlF.write("      - \'" + path + "\'\n")
     else:
-        yamlF.write("    paths: [\'" + artifact["paths"] + "\']\n")
+        yamlF.write("  attributes: ")
+        yamlF.write("{paths: [\'" + artifact["paths"] + "\']}\n")
     yamlF.write("labels: [" + artifact["labels"] + "]\n")
     yamlF.write("supported_os: [Darwin]\n")
     
