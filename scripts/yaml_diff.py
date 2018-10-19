@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import argparse
 import sys
 
@@ -34,10 +36,6 @@ def main():
     parser.print_help()
     sys.exit(0)
 
-  missing_file = open(args.output_directory + "/missing_in_" +
-                      args.second_yaml.split("/")[-1], 'w')
-  new_file_out = open(args.output_directory + "/new_from_" +
-                      args.second_yaml.split("/")[-1], 'w')
   stream1 = open(args.first_yaml, 'r')
   stream2 = open(args.second_yaml, 'r')
 
@@ -47,6 +45,10 @@ def main():
 
     ddiff = DeepDiff(yaml1, yaml2, ignore_order=True)
 
+    missing_file = open(args.output_directory + "/missing_in_" +
+                        args.second_yaml.split("/")[-1], 'w')
+    new_file_out = open(args.output_directory + "/new_from_" +
+                        args.second_yaml.split("/")[-1], 'w')
     print("\nMISSING ARTIFACTS IN " + args.second_yaml + " FROM " +
           args.first_yaml + ":\n")
     if 'iterable_item_removed' in ddiff.keys():
@@ -67,6 +69,9 @@ def main():
     print(exc)
 
 
+# This function removes the URL field from the entry to make
+# proper 1:1 comparison on the artifacts content, and remove invalid
+# entries (e.g. often closure trail is wrong, '---' instead of '...')
 def clear_urls(stream):
   yaml_tmp = list(ruamel.yaml.round_trip_load_all(stream, preserve_quotes=True))
   for data in yaml_tmp:
