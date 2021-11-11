@@ -31,7 +31,7 @@ Here is the shared spreadsheet for the iOS artifacts (way too much initial phase
 
 ## Mac4n6 Papers and Presentations
 Here you find some of the most interesting presentation on Mac OS X and iOS Forensics.
-* https://drive.google.com/folderview?id=0B37-sa0Wh9_TdjVSbzRvMEVGQ2c&usp=sharing#list
+* https://drive.google.com/drive/folders/0B37-sa0Wh9_TdjVSbzRvMEVGQ2c?resourcekey=0-nz5A4RSaxKhFrun3tpTU7w&usp=sharing
 
 ## Contribute
 If you are interested in contributing, please join us at https://groups.google.com/d/forum/mac4n6
